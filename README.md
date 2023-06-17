@@ -16,13 +16,7 @@ Before proceeding, ensure that you have the following prerequisites installed on
 3. Execute the following command to clone the repository:
 
 ```shell
-git clone <repository-url>
-```
-
-Replace `<repository-url>` with the URL of the repository you want to clone. For example:
-
-```shell
-git clone https://github.com/username/repository.git
+git clone https://github.com/kashiph001/WorldMap.git
 ```
 
 4. Press Enter to execute the command.
@@ -48,16 +42,10 @@ This command will download and install all the required dependencies listed in t
 
 ## Run the Code
 
-1. Once the dependencies are installed, you can run the code using the following command:
+Once the dependencies are installed, you can run the code using the following command:
 
 ```shell
 npm start
 ```
 
 This command will execute the start script defined in the `package.json` file. It typically starts the application or runs the code.
-
-2. Observe the output or follow any additional instructions provided in the repository's documentation to interact with or use the code.
-
-## Conclusion
-
-You have successfully cloned the repository from GitHub, installed the necessary packages using npm, and run the code using npm start. You can now explore and work with the codebase as needed. If you encounter any issues, refer to the repository's documentation or seek assistance from the project's maintainers.
