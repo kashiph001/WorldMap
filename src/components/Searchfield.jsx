@@ -7,7 +7,7 @@ export const Searchfield = ({ setCountryData, setOpen }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = async () => {
-    setOpen(true);
+    
     try {
       // Make a GET request to fetch country data based on the search query
       const response = await axios.get(
@@ -16,6 +16,7 @@ export const Searchfield = ({ setCountryData, setOpen }) => {
 
       let countryCode;
       if (response.data.length > 0) {
+        setOpen(true); //opening Drawer
         // Iterate through the response data to find a matching country name
         response.data.forEach((data) => {
           if (
