@@ -16,14 +16,14 @@ const MapComponent = () => {
 
   // Function to handle country click event
   const handleCountryClick = async (countryCode) => {
-    setOpen(true);
     try {
       // Make API request to fetch country data
       const response = await axios.get(
         `https://restcountries.com/v2/alpha/${countryCode}`
       );
-      console.log(response.data);
+      // console.log(response.data);
       setCountryData(response.data);
+      setOpen(true);
     } catch (error) {
       console.error("Error fetching country data:", error);
     }
