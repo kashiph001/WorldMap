@@ -9,7 +9,9 @@ const CountryDetails = ({ countryData, open, setOpen }) => {
   return (
     <div>
       {/* Check if countryData is available */}
-      {countryData && (
+      {countryData &&
+      countryData.currencies &&
+      countryData.currencies.length > 0 &&(
         <Drawer
           style={{
             backgroundColor: "rgb(228,236,194)",
