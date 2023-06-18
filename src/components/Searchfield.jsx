@@ -16,7 +16,6 @@ export const Searchfield = ({ setCountryData, setOpen }) => {
 
       let countryCode;
       if (response.data.length > 0) {
-        setOpen(true); //opening Drawer
         // Iterate through the response data to find a matching country name
         response.data.forEach((data) => {
           if (
@@ -29,6 +28,7 @@ export const Searchfield = ({ setCountryData, setOpen }) => {
             countryCode = data.alpha2Code;
             // Set the country data in the parent component using setCountryData
             setCountryData(data);
+            setOpen(true); //opening Drawer
           }
         });
       } else {
