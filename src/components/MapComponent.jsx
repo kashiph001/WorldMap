@@ -47,7 +47,7 @@ const MapComponent = () => {
         zoom={[1]}
         onClick={(map, event) => {
           const features = map.queryRenderedFeatures(event.point);
-          if (features.length > 0) {
+          if (features && features.length > 0) {
             const feature = features[0];
             const countryCode = feature.properties.iso_3166_1;
             handleCountryClick(countryCode);
