@@ -58,10 +58,6 @@ const MapComponent = () => {
         <Layer
           type="line"
           id="country-line"
-          paint={{
-            "fill-color": "#888888",
-            "fill-opacity": 0.3,
-          }}
         >
           {/* Features for world bounds */}
           <Feature coordinates={[-180, 90]} />
