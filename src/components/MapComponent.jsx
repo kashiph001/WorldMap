@@ -57,7 +57,7 @@ const MapComponent = () => {
         {/* Layer for country fill */}
         <Layer
           type="line"
-          id="country-fill"
+          id="country-line"
           paint={{
             "fill-color": "#888888",
             "fill-opacity": 0.3,
